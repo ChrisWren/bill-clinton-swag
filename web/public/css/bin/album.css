@@ -1,0 +1,201 @@
+body, html {
+  font-family: "museo-slab", serif; }
+
+h1 {
+  font-family: "museo-slab", serif;
+  font-weight: 700;
+  font-size: 3.6em;
+  margin: 0.2em 0em; }
+
+h3 {
+  font-family: "museo-slab", serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  margin: 0.2em 0em; }
+
+.masthead {
+  padding-top: 70px;
+  margin-left: -50px;
+  margin-right: auto;
+  margin-top: 0px;
+  width: 790px;
+  background: url('/images/bin/clinton_masthead.png');
+  background-repeat: no-repeat;
+  background-position: right bottom; }
+
+.subtitle {
+  position: relative;
+  top: -13px;
+  left: -15px;
+  margin-top: -0.3em; }
+
+.container {
+  width: 790px;
+  margin: 0 auto;
+  text-align: center; }
+  .container input {
+    width: 100%; }
+
+.search {
+  width: 715px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -5px;
+  height: 50px;
+  position: relative;
+  background: #0e233e; }
+
+#search {
+  font-family: "museo-slab", serif;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 360px;
+  padding: 0 5px;
+  border: none;
+  line-height: 30px; }
+
+#search_spinner {
+  display: none;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 516px;
+  top: 14px; }
+
+#search_results, ul {
+  list-style-type: none;
+  display: none;
+  position: relative;
+  margin: 0 auto;
+  top: 0;
+  border: 1px solid #aaaaaa;
+  border-top: none;
+  width: 360px;
+  padding: 0; }
+
+.result {
+  background: #eeeeee;
+  border-bottom: 1px solid #dddddd; }
+
+.decision {
+  background: white;
+  float: left; }
+  .decision img {
+    z-index: 5;
+    height: 190px;
+    width: 190px;
+    padding: 10px; }
+
+.result {
+  padding: 0px;
+  margin: 0 auto; }
+  .result img {
+    padding: 7px;
+    width: 65px;
+    height: 65px;
+    float: left; }
+  .result .info {
+    text-align: left;
+    padding-top: 5px;
+    margin-left: 80px;
+    height: 75px; }
+    .result .info .artist {
+      color: #555555;
+      font-size: 90%; }
+
+.itemhover {
+  background: #265da5; }
+  .itemhover .artist {
+    color: #eeeeee !important; }
+  .itemhover .album {
+    color: white !important; }
+
+#records {
+  width: 700px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto; }
+  #records #instructions {
+    float: left;
+    width: 225px;
+    height: 400px;
+    margin-top: 10px;
+    padding-right: 15px; }
+    #records #instructions #message {
+      font-size: 24px; }
+    #records #instructions #remaining, #records #instructions #remaining_message {
+      z-index: -1;
+      color: #dddddd;
+      font-weight: 700; }
+    #records #instructions #remaining {
+      font-size: 136px;
+      line-height: 110px; }
+    #records #instructions #remaining_message {
+      font-size: 18px; }
+  #records #preview {
+    float: left;
+    padding-left: 24px;
+    height: 400px;
+    width: 430px;
+    border-left: 1px solid #dddddd; }
+    #records #preview .no_records {
+      padding: 180px 0;
+      margin: 0 auto;
+      color: #bbbbbb; }
+
+#records:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+button {
+  font-family: "museo-slab", serif;
+  font-size: 18px;
+  margin-top: 15px;
+  color: white;
+  background-color: #0e233e;
+  border: none;
+  padding: 8px 15px;
+  font-weight: bold;
+  margin-left: 0; }
+
+#spinner {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+#final {
+  margin: 0 auto;
+  width: 465px;
+  height: 683px; }
+  #final .options {
+    position: absolute;
+    padding-top: 200px;
+    display: none;
+    width: 465px;
+    height: 483px; }
+  #final .link {
+    padding: 15px 0;
+    color: black;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.7);
+    width: 150px;
+    margin: 10px auto; }
+
+#final:hover .options {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5); }
+#final:hover .link:hover {
+  color: white;
+  background: black; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+.footer {
+  height: 80px; }
+  .footer p {
+    font-size: 12px; }

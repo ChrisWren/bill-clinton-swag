@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bill Clinton Swag</title>
+
+  {{> fb_meta}}
+
+  <script type="text/javascript" src="//use.typekit.net/swi5ziy.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  {{{ block "pageCss" }}}
+  <link type="text/css" rel="stylesheet" media="all" href="/css/bin/album.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="masthead">
+      <a href="/">
+      <h1 class="title">Bill Clinton Swag</h1>
+      <h3 class="subtitle">"I did not have sexual relations with that record"</h3>
+      </a>
+    </div>
+
+    {{{ body }}}
+
+    <div class="footer">
+      <fb:like href="http://www.billclintonswag.com" send="false" layout="button_count" width="450" show_faces="false" font="lucida grande"></fb:like>
+      <p>Created By: <a href="http://thmsmlr.com">thmsmlr</a></p>
+    </div>
+  </div>
+
+  <div id="fb-root"></div>
+
+  {{{ block "pageJs" }}}
+
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=435072699884616";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35719589-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+</body>
+</html>
