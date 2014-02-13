@@ -107,10 +107,6 @@ Handle<Value> Generate(const Arguments& args) {
 
         clintonBack.read(clintonBackPath);
         clintonFront.read(clintonFrontPath);
-        clintonBack.matteColor(Magick::Color("Transparent"));
-        clintonBack.virtualPixelMethod(Magick::TransparentVirtualPixelMethod);
-        clintonFront.matteColor(Magick::Color("Transparent"));
-        clintonFront.virtualPixelMethod(Magick::TransparentVirtualPixelMethod);
 
         clintonBack.composite(albumImages[0], 66 , 237, Magick::OverCompositeOp);
         clintonBack.composite(albumImages[1], 8  , 511, Magick::OverCompositeOp);
