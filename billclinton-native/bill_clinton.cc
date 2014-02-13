@@ -1,5 +1,6 @@
 #include "bill_clinton.h"
 #include <libgen.h>
+#include <string.h>
 
 #define THROW_ERROR_EXCEPTION(x) ThrowException(v8::Exception::Error(String::New(x))); \
     scope.Close(Undefined())
@@ -106,6 +107,10 @@ Handle<Value> Generate(const Arguments& args) {
 
         clintonBack.read(clintonBackPath);
         clintonFront.read(clintonFrontPath);
+        clintonBack.matteColor(Magick::Color("Transparent"));
+        clintonBack.virtualPixelMethod(Magick::TransparentVirtualPixelMethod);
+        clintonFront.matteColor(Magick::Color("Transparent"));
+        clintonFront.virtualPixelMethod(Magick::TransparentVirtualPixelMethod);
 
         clintonBack.composite(albumImages[0], 66 , 237, Magick::OverCompositeOp);
         clintonBack.composite(albumImages[1], 8  , 511, Magick::OverCompositeOp);
